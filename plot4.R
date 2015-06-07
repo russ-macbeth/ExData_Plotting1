@@ -42,7 +42,7 @@ with(df, plot(df$datetime, df$Voltage, type = "l", ylab = "Voltage", , xlab = "d
 with(df, plot(df$datetime, df$Sub_metering_1, type = "l", ylab = "Energy sub metering", xlab= ""))
 lines(df$datetime, df$Sub_metering_2, col = "red")
 lines(df$datetime, df$Sub_metering_3, col = "blue")
-legend("topright", lty = 1, col = c("black", "red", "blue"), legend = colnames(df[,8:10]))
+legend("topright", lty = 1, col = c("black", "red", "blue"), bty = "n", legend = colnames(df[,8:10]))
 
 ## Plot 4, bottom right
 plot(df$datetime, df$Global_reactive_power, type = "l", ylab = "Global_reactive_power", xlab = "datetime")
